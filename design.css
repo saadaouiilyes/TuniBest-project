@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+
+html{box-sizing: border-box;
+    overflow: hidden;}
+*{margin:0 auto;}
+*::after,
+*::before{box-sizing: inherit;}
+
+.logo{
+    width: auto;
+    height: auto;
+    padding: 0%;
+}
+.background{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 3px;
+    animation: slider 20s linear infinite;
+}
+@keyframes slider{
+    0%{ 
+        background-image: url(/resident-evil-welcome-to-raccoon-city-injuries-x1o66k0vzbm12mc8.jpg);
+    }
+    30%{background-image: url(/wallpapersden.com_vikings-valhalla-hd_2134x1200.jpg);
+
+    }
+    60%{
+        background-image: url(/901363.jpg);
+    }
+    80%{
+        background-image: url(/oppenheimer.jpg);
+    }
+    100%{
+        background-image: url(/394511.jpg);
+    }
+}
+.backdrop{
+    width: 600px;
+    position: center;
+    
+    background-color: hsl(0 0% 100%/ .2);
+    border: 1px solid hsl(0 0% 100%/ .2);
+    box-shadow: .05rem .1rem .3rem -.03rem hsl(0 0% 0%/ .2) ;
+    border-radius: .5ch;
+    padding-block: 20px;
+    padding-inline: 120px;
+    color: white;
+    font-size: clamp(16px,2vmax,22px);
+    line-height: 1.5;
+    text-align: start;
+    backdrop-filter: blur(20px);
+    transform: translateY(-120%);
+    top: auto;
+}
+.typing{
+    width: 150px;
+    animation: typing 2s steps(22) , blink .5s step-end infinite alternate ;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    text-align: start;
+    padding: 0%;
+    
+   
+}
+@keyframes typing{
+    from{
+        width :0;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.menu{
+    display:flex;
+    width: 252px;
+    align-items:center;
+    justify-content:center;
+    height: 100%;
+    font-family: roboto;
+    font-size:15px;
+    line-height: 20px;
+    height: 100%;
+    width: 252px;
+    color: white;
+  
+}
+.title{
+    top: 0;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    height: 100%;
+    width: 250px;
+    color: aliceblue;
+    z-index: 500;
+    transform: translateY(15%);
+    margin-left: 40%;
+}
+nav{
+    height: 100%;
+    width: 252px;
+}
+a{
+    text-decoration: none;
+    color: #ababab
+}
+a:hover{
+    color:#00b3b9 ;
+    cursor: pointer;
+    text-decoration: underline;
+}
+li{
+    list-style: none;
+    color: #ababab
+    
+}
+header{
+    display:flex;
+    height: 70px;
+    justify-content: space-between;
+    align-content: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    position:absolute;
+    background-color:transparent;
+    width: 100%;
+    box-shadow: 0px 0px 0px 1px rgb(200, 174, 174);
+    top: 0;
+}
+li:hover{
+    color:#00b3b9 ;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
